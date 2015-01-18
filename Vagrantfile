@@ -28,5 +28,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.scope = :machine
   end
+
+  # Provision
+  config.vm.provision :chef_solo do |chef|
+    chef.run_list = [
+      "recipe[cookbook-bms::default]"
+    ]
+  end
 end
 
