@@ -1,0 +1,7 @@
+name             'cookbook-bms'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures cookbook-bms'
+long_description 'Installs/Configures cookbook-bms'
+version          '0.1.0'
