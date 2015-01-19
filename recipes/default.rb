@@ -6,3 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+include_recipe 'cookbook-bms::yum'
+include_recipe 'cookbook-bms::apache2'
+include_recipe 'cookbook-bms::php'
