@@ -26,6 +26,7 @@ default['php']['configure_options'] = %W{
   --with-config-file-scan-dir=#{php['ext_conf_dir']}
   --with-pear
   --enable-fpm
+  --enable-opcache
   --with-zlib
   --with-openssl
   --with-kerberos
