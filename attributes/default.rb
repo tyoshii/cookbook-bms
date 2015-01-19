@@ -1,3 +1,14 @@
+# cookbook-bms / httpd
+default['cookbook-bms']['app_configurations'] = [
+  {
+    'name' => 'bms',
+    'server_name' => 'bms.local',
+    'error_log_dir' => '~',
+    'access_log_dir' => '~',
+    'docroot' => '~'
+  }
+]
+
 # cookbook-bms / yum
 default['yum']['packages'] = %w{
   vim
