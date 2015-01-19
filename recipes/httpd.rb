@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: cookbook-bms
-# Recipe:: apache2
+# Recipe:: httpd
 #
 # Copyright (C) 2015 YOUR_NAME
 #
