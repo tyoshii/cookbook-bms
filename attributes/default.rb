@@ -8,6 +8,19 @@ default['cookbook-bms']['httpd']['app_configurations'] = [
     'docroot' => '~'
   }
 ]
+default['cookbook-bms']['httpd']['ssl'] = [
+  {
+    'file' => 'server.key',
+    'path' => '/etc/pki/tls/certs',
+    'checksum' => 'e479e24bdd68836e9b8f352008513d7d6fdd74842b297c11d8484394fd3f5e34'
+  },
+  {
+      'file' => 'server.crt',
+      'path' => '/etc/pki/tls/certs',
+      'checksum' => 'ad231cc77692f8c04371ba6fa06b233c8218da2e5e13056d44345678c011d4d6'
+  }
+]
+
 
 # cookbook-bms / yum
 default['yum']['packages'] = %w{
