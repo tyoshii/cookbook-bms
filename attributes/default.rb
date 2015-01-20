@@ -1,5 +1,5 @@
 # cookbook-bms / httpd
-default['cookbook-bms']['app_configurations'] = [
+default['cookbook-bms']['httpd']['app_configurations'] = [
   {
     'name' => 'bms',
     'server_name' => 'bms.local',

@@ -11,7 +11,7 @@ include_recipe 'apache2'
 include_recipe 'apache2::mod_rewrite'
 include_recipe 'apache2::mod_ssl'
 
-node['cookbook-bms']['app_configurations'].each do | conf |
+node['cookbook-bms']['httpd']['app_configurations'].each do | conf |
   file "/etc/httpd/sites-available/#{conf[:name]}.conf" do
     action :delete
   end
