@@ -28,6 +28,11 @@ default['yum']['packages'] = %w{
   git
 }
 
+# cookbook-bms / php
+default['cookbook-bms']['php']['pear']['packages'] = %w{
+  xdebug
+}
+
 # opscode / cookbook-php
 default['php']['install_method'] = 'source'
 default['php']['version'] = '5.6.4'
