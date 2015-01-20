@@ -25,3 +25,9 @@ bash "install icu-config" do
 end
 
 include_recipe 'php'
+
+node['cookbook-bms']['php']['pear']['packages'].each do |name|
+  php_pear name do
+    action :install
+  end
+end
