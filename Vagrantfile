@@ -18,6 +18,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # SSH
   config.ssh.forward_agent = true
 
+  # Synced Folder
+  config.vm.synced_folder './', '/vagrant', :mount_options => %w{dmode=777 fmode=777}
+
   # Chef-Omnibus
   config.omnibus.chef_version = '11.6.0'
 
