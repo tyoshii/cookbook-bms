@@ -12,12 +12,12 @@ default['cookbook-bms']['httpd']['ssl'] = [
   {
     'file' => 'server.key',
     'path' => '/etc/pki/tls/certs',
-    'checksum' => 'e479e24bdd68836e9b8f352008513d7d6fdd74842b297c11d8484394fd3f5e34'
+    'checksum' => '27912995c3cb45c131df8bf0d42401924a2dbeb453bc35adb3247873071db963'
   },
   {
       'file' => 'server.crt',
       'path' => '/etc/pki/tls/certs',
-      'checksum' => 'ad231cc77692f8c04371ba6fa06b233c8218da2e5e13056d44345678c011d4d6'
+      'checksum' => 'da14a335a65cd7a7a361ba19138accc8ed0e02159fb05459181c8e50b3056687'
   }
 ]
 
