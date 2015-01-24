@@ -35,7 +35,8 @@ default['cookbook-bms']['php']['pear']['packages'] = %w{
 
 # opscode / cookbook-php
 default['php']['install_method'] = 'source'
-default['php']['version'] = '5.6.4'
+default['php']['version'] = '5.6.5'
+default['php']['checksum'] = 'f67c480bcf2f6f703ec8d8a772540f4a518f766b08d634d7a919402c13a636cf'
 default['php']['prefix_dir'] = '/usr/local'
 default['php']['configure_options'] = %W{
   --prefix=#{php['prefix_dir']}
