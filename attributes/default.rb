@@ -23,7 +23,7 @@ default['cookbook-bms']['httpd']['ssl'] = [
 
 
 # cookbook-bms / yum
-default['yum']['packages'] = %w{
+default['cookbook-bms']['yum']['packages'] = %w{
   vim
   git
 }

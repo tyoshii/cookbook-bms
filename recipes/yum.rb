@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-node['yum']['packages'].each do |name|
+node['cookbook-bms']['yum']['packages'].each do |name|
   yum_package "install #{name}" do
     package_name name
     action :install
