@@ -6,7 +6,6 @@ Listen 0.0.0.0:443
 AddType application/x-x509-ca-cert .crt
 AddType application/x-pkcs7-crl    .crl
 
-SSLPassPhraseDialog  exec:/etc/httpd/conf/sslpass.sh
 SSLSessionCache         shmcb:/var/cache/mod_ssl/scache(512000)
 SSLSessionCacheTimeout  300
 SSLMutex  file:logs/ssl_mutex
